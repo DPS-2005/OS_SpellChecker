@@ -1,2 +1,2 @@
 # OS_SpellChecker
-OS project for spell check
+OS project for `dynamic spell check.`

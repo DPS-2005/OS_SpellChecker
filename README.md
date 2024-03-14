@@ -13,8 +13,8 @@ In case the some update is done in previous part of what typed till now, then -
 
 #### Implementation 
 For Implementation we will first require to include Typo.js which is Javascript spell checker.
-Now, we split all the words in the textarea and store them in an array.
-After completion of the last word and entering a "Space" just after it we initiate our call of the function that will replace our current word with it's correct spelling if wrong.
-For this we initiate a variable word that tracks our last word, buffer that stores what is coming after the word and the  space which usually includes a "Fullstop" or a "comma".
-Now we pass the word in the function and it checks for it's correct spelling in dictionary function provided in Typo.js .
-Further we remove the last word from our textarea and then replace our textarea with the "new/corrected word + buffer" .
+-> Now, we split all the words in the textarea and store them in an array.
+-> After completion of the last word and entering a "Space" just after it we initiate our call of the function that will replace our current word with it's correct spelling if wrong.
+-> For this we initiate a variable word that tracks our last word, buffer that stores what is coming after the word and the  space which usually includes a "Fullstop" or a "comma".
+-> Now we pass the word in the function and it checks for it's correct spelling in dictionary function provided in Typo.js .
+-> Further we remove the last word from our textarea and then replace our textarea with the "new/corrected word + buffer" .

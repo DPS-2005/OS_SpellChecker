@@ -12,34 +12,6 @@ userText.addEventListener('input', () => {
     {
         if(currentValue.charAt(currentValue.length - 1) == " ")
         {
-            var word = arr[arr.length-2];
-            var change = word;
-			console.log(arr[arr.length - 2]);
-            let buffer = " ";
-			let endswith = word.charAt(word.length-1)
-            if(endswith=="." || endswith=="," || endswith==";" || endswith=="!" ||endswith=="?")
-            {
-				word = word.slice(0,-1);
-                buffer = endswith;
-            }
-		
-            if(dictionary.suggest(word).length != 0)
-            {
-				let a = Math.random();
-				let ind;
-				if (a>0.85){
-					ind =1;
-				}
-				else {
-					ind=0;
-				}
-                change = dictionary.suggest(change)[ind];
-                var newValue = currentValue.replace(word+buffer, '')
-                // console.log(newValue);
-                userText.value = newValue + change + buffer;
-            }
-
-			// if(currentValue.charAt(currentValue.length - 2) == "."){
 			let val="";
 			for (let i=0; i<arr.length-1; i++){
 				// if (Number(arr[i]) != NaN){
@@ -76,7 +48,7 @@ userText.addEventListener('input', () => {
 						let a = Math.random();
 						let ind;
 						if (a>0.85){
-							ind =1;
+							ind =1
 						}
 						else {
 							ind=0;
@@ -90,8 +62,6 @@ userText.addEventListener('input', () => {
 				}
 			}
 			document.getElementById('userText').value=val;
-			// }
-			
         }
     }
 }

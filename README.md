@@ -1,4 +1,4 @@
-# OS_SpellChecker
+# Dynamic SpellChecker
 OS project for `dynamic spell check.`
 
 ## Architecture

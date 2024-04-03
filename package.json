@@ -1,5 +1,16 @@
 {
+  "name": "rough",
+  "version": "1.0.0",
+  "description": "rough",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "me",
+  "license": "ISC",
   "dependencies": {
+    "spellchecker": "^3.7.1",
+    "textarea-caret-position": "^0.1.1",
     "typo-js": "^1.2.4"
   }
 }

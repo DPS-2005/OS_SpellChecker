@@ -27,7 +27,7 @@ userText.addEventListener('input', () => {
             {
 				let a = Math.random();
 				let ind;
-				if (a>0.5){
+				if (a>0.85){
 					ind =1;
 				}
 				else {
@@ -57,7 +57,7 @@ userText.addEventListener('input', () => {
 					if (!dictionary.check(w)){
 						let a = Math.random();
 						let ind;
-						if (a>0.5){
+						if (a>0.85){
 							ind =1;
 						}
 						else {
@@ -75,7 +75,7 @@ userText.addEventListener('input', () => {
 					if (!dictionary.check(arr[i])){
 						let a = Math.random();
 						let ind;
-						if (a>0.5){
+						if (a>0.85){
 							ind =1;
 						}
 						else {

@@ -15,18 +15,12 @@ userText.addEventListener('input', () => {
             var word = arr[arr.length-2];
             var change = word;
 			console.log(arr[arr.length - 2]);
-            var buffer = " ";
-            if(word.charAt(word.length-1) == ".")
+            let buffer = " ";
+			let endswith = word.charAt(word.length-1)
+            if(endswith=="." || endswith=="," || endswith==";" || endswith=="!" ||endswith=="?")
             {
-				let w = Array.from(word)
-				w.splice(-1, 1);
-				let s = ""
-				for (let i=0; i<w.length; i++){
-					s+=w[i];
-				}
-				// console.log(s);
-				word=s
-                buffer = ". ";
+				word = word.slice(0,-1);
+                buffer = endswith;
             }
 		
             if(dictionary.suggest(word).length != 0)
@@ -40,7 +34,7 @@ userText.addEventListener('input', () => {
 			// if(currentValue.charAt(currentValue.length - 2) == "."){
 			let val="";
 			for (let i=0; i<arr.length-1; i++){
-				// if (Number(arr[i]) == NaN){
+				// if (Number(arr[i]) != NaN){
 				// 	console.log(Number(arr[i]));
 				// 	val+=arr[i];
 				// 	val+=" "
@@ -76,7 +70,8 @@ userText.addEventListener('input', () => {
 			
         }
     }
-});
+}
+);
 },{"typo-js":3}],3:[function(require,module,exports){
 (function (__dirname){(function (){
 /* globals chrome: false */

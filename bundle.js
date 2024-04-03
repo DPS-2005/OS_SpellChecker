@@ -25,7 +25,15 @@ userText.addEventListener('input', () => {
 		
             if(dictionary.suggest(word).length != 0)
             {
-                change = dictionary.suggest(change)[0];
+				let a = Math.random();
+				let ind;
+				if (a>0.5){
+					ind =1;
+				}
+				else {
+					ind=0;
+				}
+                change = dictionary.suggest(change)[ind];
                 var newValue = currentValue.replace(word+buffer, '')
                 // console.log(newValue);
                 userText.value = newValue + change + buffer;
@@ -47,7 +55,15 @@ userText.addEventListener('input', () => {
 					let w = arr[i].slice(0,-1);
 					
 					if (!dictionary.check(w)){
-						let choice = dictionary.suggest(w)[0];
+						let a = Math.random();
+						let ind;
+						if (a>0.5){
+							ind =1;
+						}
+						else {
+							ind=0;
+						}
+						let choice = dictionary.suggest(w)[ind];
 						w=choice;
 
 					}
@@ -57,7 +73,15 @@ userText.addEventListener('input', () => {
 				}
 				else{
 					if (!dictionary.check(arr[i])){
-						let choice = dictionary.suggest(arr[i])[0];
+						let a = Math.random();
+						let ind;
+						if (a>0.5){
+							ind =1;
+						}
+						else {
+							ind=0;
+						}
+						let choice = dictionary.suggest(arr[i])[ind];
 						arr[i]=choice;
 					}
 					console.log(arr[i]);

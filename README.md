@@ -18,6 +18,6 @@ This is a simple spelling checker where we used the npm module `typo-js`. The la
 - Finally whenever we change any number of word at a given time instant, they all get corrected after just before we proceed to write the next word in textarea.
 
 ### Limitations
-- This spell check is done by only looking in a particular word and not its context, so, sometimes will give wrong results also and for that we need to incorporate NLP algoritms.
+- This spell check is done by only looking in a particular word and not its context, so, sometimes will give wrong results also and for that we need to incorporate NLP algorithms.
 - Also the check is sometimes not so fast, some lag may occur and keeping in mind of this lag we not kept some rare cases (in daily typing) in our project.
   
